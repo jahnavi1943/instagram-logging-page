@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Glowing Button</title>
+  <style>
+    body {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .glow-btn {
+      padding: 15px 30px;
+      font-size: 18px;
+      color: white;
+      background: #ff007f;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f, 0 0 30px #ff007f;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .glow-btn:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <button class="glow-btn">Click Me</button>
+</body>
+</html>
